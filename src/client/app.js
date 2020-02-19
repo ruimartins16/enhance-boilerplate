@@ -1,12 +1,10 @@
-import React, { Component} from "react";
-import {hot} from "react-hot-loader";
-import Home from "./pages/Home/home";
+import React, { Component } from 'react';
+import { hot } from 'react-hot-loader';
+import Home from './pages/Home/home';
 
-class App extends Component{
-  render(){
-    return(
-      <Home/>
-    );
+class App extends Component {
+  render() {
+    return <Home />;
   }
 }
 

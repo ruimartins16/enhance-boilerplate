@@ -1,0 +1,70 @@
+Arguments: 
+  /Users/ruimartins/.nvm/versions/node/v8.9.1/bin/node /usr/local/Cellar/yarn/1.13.0/libexec/bin/yarn.js prettier
+
+PATH: 
+  /Users/ruimartins/.nvm/versions/node/v8.9.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  8.9.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/ruimartins/Documents/dev/chrono/enhance/package.json: Unexpected token } in JSON at position 397
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:304:30)
+      at /usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:315:13
+      at <anonymous>
+
+npm manifest: 
+  {
+    "name": "enhance",
+    "version": "1.0.0",
+    "description": "Evolution playground",
+    "main": "index.js",
+    "scripts": {
+      "start": "webpack-dev-server --mode development",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "webpack --mode development",
+      "prettier": "prettier --check \"**/*{ts,tsx}\"",
+      "prettier-fix": "prettier --check --write '**/*{ts,tsx}'",
+    },
+    "author": "Rui Martins",
+    "license": "ISC",
+    "devDependencies": {
+      "@babel/cli": "^7.1.0",
+      "@babel/core": "^7.1.0",
+      "@babel/preset-env": "^7.1.0",
+      "@babel/preset-react": "^7.0.0",
+      "@types/react": "^16.9.17",
+      "@types/react-dom": "^16.9.4",
+      "babel-loader": "^8.0.2",
+      "css-loader": "^1.0.0",
+      "prettier": "^1.19.1",
+      "source-map-loader": "^0.2.4",
+      "style-loader": "^0.23.0",
+      "ts-loader": "^6.2.1",
+      "typescript": "^3.7.4",
+      "webpack": "^4.41.5",
+      "webpack-cli": "^3.1.1",
+      "webpack-dev-server": "^3.10.1"
+    },
+    "dependencies": {
+      "and": "0.0.3",
+      "react": "^16.12.0",
+      "react-dom": "^16.12.0",
+      "react-hot-loader": "^4.12.18"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

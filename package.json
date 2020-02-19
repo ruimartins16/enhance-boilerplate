@@ -6,7 +6,9 @@
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode development"
+    "build": "webpack --mode development",
+    "prettier": "prettier --list-different \"**/*{ts,tsx}\"",
+    "prettier-fix": "prettier --list-different --write \"**/*{ts,tsx}\""
   },
   "author": "Rui Martins",
   "license": "ISC",
@@ -19,6 +21,7 @@
     "@types/react-dom": "^16.9.4",
     "babel-loader": "^8.0.2",
     "css-loader": "^1.0.0",
+    "prettier": "^1.19.1",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.0",
     "ts-loader": "^6.2.1",
